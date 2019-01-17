@@ -32,6 +32,13 @@ app.get('/about', (req, res) => {
         mrsName: 'Mike'
     });
 });
+
+app.get('/projects', (req, res) => {
+    res.render('projects.hbs', {
+        pageTitle: 'Projects!',
+        mrsName: 'Miguel Rodriguez'
+    });
+});
 app.listen(port, () => {
     console.log(`Server Running on port ${port}`);
 });
